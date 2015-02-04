@@ -14,9 +14,15 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Finally, add these lines to your `app/assets/javascripts/application.js`:
 
-    $ gem install spoiler-alert-rails
+``` js
+//= require spoiler
+
+$(document).ready(function() {
+    $('.spoiler').spoilerAlert(); // this adds the blur effect to all elements with the class 'spoiler'
+});
+```
 
 ## Usage
 
