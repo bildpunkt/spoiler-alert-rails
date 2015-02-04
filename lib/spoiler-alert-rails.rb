@@ -1,0 +1,1 @@
+require 'spoiler-alert/rails'
