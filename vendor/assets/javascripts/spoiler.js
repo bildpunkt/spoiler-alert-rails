@@ -4,7 +4,7 @@
     browser.mozilla = /mozilla/.test(userAgent) && !/webkit/.test(userAgent);
     browser.webkit = /webkit/.test(userAgent);
     browser.opera = /opera/.test(userAgent);
-    browser.msie = /msie/.test(userAgent);
+    browser.msie = /msie/.test(userAgent) || /trident/.test(userAgent);
 
     var defaults = {
         max: 4,
